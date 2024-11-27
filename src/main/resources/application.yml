@@ -1,9 +1,7 @@
 spring:
-  application:
-    name: product-app
   datasource:
-    driver-class-name: ${DB_DRIVER}
-    url: ${DB_URL}
+    driver-class-name: ${DB_DRIVER_NAME}
+    url: jdbc:mysql://${DB_HOST_SERVICE_NAME}:${DB_PORT}/${DB_SCHEMA}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   jpa:
