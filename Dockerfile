@@ -8,4 +8,4 @@ COPY target/product-app /usr/app/product-app
 
 ENTRYPOINT["java","-jar","product-app.jar"]
 
-EXPOSE 8081
+EXPOSE 8080
